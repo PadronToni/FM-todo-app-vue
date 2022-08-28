@@ -1,5 +1,13 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+
+/* Styles */
+/* generics */
+@import "styles/generics/base.css";
+/* elements */
+@import "styles/elements/form.css";
+/* objects */
+@import "styles/objects/todo.css";
 
 /* Tailwind */
 @tailwind base;

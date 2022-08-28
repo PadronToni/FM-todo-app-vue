@@ -1,0 +1,5 @@
+body {
+  @apply text-neutral-light-600 dark:text-neutral-dark-100
+	bg-neutral-light-50 dark:bg-neutral-dark-900
+	min-h-screen;
+}
