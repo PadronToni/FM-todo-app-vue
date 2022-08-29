@@ -12,7 +12,7 @@
 </template>
 
 <script>
-const DEF_PLACEHOLDER = "Create a new to do...";
+const DEF_PLACEHOLDER = "Create a new todo...";
 </script>
 <script setup>
 import { ref } from "vue";
