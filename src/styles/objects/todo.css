@@ -1,0 +1,6 @@
+
+.todo {
+	@apply px-5 py-4
+	bg-neutral-light-50 dark:bg-neutral-dark-700
+	rounded;
+}

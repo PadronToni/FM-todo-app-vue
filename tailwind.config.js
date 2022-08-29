@@ -7,6 +7,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     colors: {
+      transparent: 'transparent',
+      'current-color': 'currentColor',
+      inherit: 'inherit',
       primary: {
         blue: 'hsl(220, 98%, 61%)',
         cyan: 'hsl(192, 100%, 67%)',
