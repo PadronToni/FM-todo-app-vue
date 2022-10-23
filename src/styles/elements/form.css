@@ -11,3 +11,67 @@ input:active {
 input[type="text"] {
   @apply flex items-center bg-transparent text-inherit text-sm;
 }
+
+/*  */
+
+/* Checkbox */
+label.checkbox {
+  @apply flex items-center text-sm font-normal m-0 cursor-pointer;
+}
+
+.checkbox input[type="checkbox"] {
+  --check-size: 1.25rem;
+  --check-border-col: theme("colors.neutral-light.200");
+  --check-bg-col: theme("colors.neutral-light.50");
+  --check-text-col: theme("colors.neutral-light.50");
+  --check-gradient: linear-gradient(
+    to bottom right,
+    theme("colors.primary.cyan/70%") 10%,
+    theme("colors.primary.blue/70%"),
+    theme("colors.primary.fuchsia/70%") 80%
+  );
+
+  appearance: none;
+  outline: none;
+  padding: 0;
+
+  width: var(--check-size);
+  height: var(--check-size);
+
+  background-color: var(--check-bg-col);
+  background-image: linear-gradient(var(--check-border-col), var(--check-border-col));
+
+  @apply relative flex items-center mr-2 rounded-full;
+  /* box-shadow: inset 0 0 0 var(--check-border-size) var(--check-border-col); */
+
+  transition: all 0.25s ease-out;
+}
+.checkbox input[type="checkbox"]:hover,
+.checkbox input[type="checkbox"]:checked {
+  background-image: var(--check-gradient);
+}
+
+.checkbox input[type="checkbox"]::before {
+  content: "\2714";
+  color: var(--check-text-col);
+  transform: scale(0);
+  transition: all 0.25s ease;
+  line-height: var(--check-size);
+  @apply w-full text-center text-xs;
+}
+
+.checkbox input[type="checkbox"]::after {
+  content: "";
+  display: block;
+  background-color: var(--check-bg-col);
+  transform: scale(0.9);
+  transition: all 0.25s ease;
+  @apply absolute w-full h-full rounded-full;
+}
+
+.checkbox input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+.checkbox input[type="checkbox"]:checked::after {
+  transform: scale(0);
+}

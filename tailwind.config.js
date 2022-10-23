@@ -11,9 +11,9 @@ module.exports = {
       'current-color': 'currentColor',
       inherit: 'inherit',
       primary: {
-        blue: 'hsl(220, 98%, 61%)',
-        cyan: 'hsl(192, 100%, 67%)',
-        fuchsia: 'hsl(280, 87%, 65%)'
+        "blue": 'hsl(220, 98%, 61%)',
+        "cyan": 'hsl(192, 100%, 67%)',
+        "fuchsia": 'hsl(280, 87%, 65%)'
       },
       'neutral-light': {
         50: 'hsl(0, 0%, 98%)',

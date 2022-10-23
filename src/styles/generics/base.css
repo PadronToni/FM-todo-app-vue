@@ -3,3 +3,8 @@ body {
 	bg-neutral-light-100 dark:bg-neutral-dark-900
 	min-h-screen;
 }
+
+*::before,
+*::after {
+	font-family: theme('fontFamily.sans');
+}
